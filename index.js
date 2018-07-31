@@ -12,7 +12,7 @@ let transaction = new Transaction("Bhavye","Charu",69);
 let block = blockchain.getNextBlock([transaction])
 blockchain.addBlock(block);
 let anotherTransaction = new Transaction("Ajju","Paras",10);
-let block1 = blockchain.getNextBlock([anotherTransaction,trasnaction]);
+let block1 = blockchain.getNextBlock([anotherTransaction,transaction]);
 blockchain.addBlock(block1);
 
 console.log(blockchain)
